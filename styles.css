@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    background-image: url('bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+@keyframes colorChange {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    25% {
+        color: rgb(0, 0, 0);
+    }
+    50% {
+        color: rgb(255, 255, 255);
+    }
+    75% {
+        color: rgb(0, 0, 0);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+@keyframes colorChang {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+    25% {
+        color: rgb(255, 255, 255);
+    }
+    50% {
+        color: rgb(0, 0, 0);
+    }
+    75% {
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        color: rgb(0, 0, 0);
+    }
+}
+.head {
+    border: 2px solid black;
+    background-color: #000;
+    margin-bottom: 2%;
+    animation: colorChange 5s infinite;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(1, 1, 1,0.87);
+    color: white;
+    font-size: 20px;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.reset {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.reset:disabled {
+  pointer-events: none;
+}
+
+.reset:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.reset:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+
+
